@@ -116,6 +116,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>examen-larose</finalName>
 	</build>
 
 </project>
