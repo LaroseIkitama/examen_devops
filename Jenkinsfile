@@ -20,7 +20,6 @@ pipeline{
             }
         }
         stage('Build docker image'){
-            agent{ dockerfile true }
             steps{
                 script{
                     sh 'docker build -t laroseikitama/examen-larose .'
