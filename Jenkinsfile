@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent none
     tools{
         maven 'maven 3.9.6'
     }
@@ -20,9 +20,10 @@ pipeline{
             }
         }
         stage('Build docker image'){
+            agent{ dockerfile true }
             steps{
                 script{
-                    //sh 'docker build -t laroseikitama/examen-larose .'
+                    sh 'docker build -t laroseikitama/examen-larose .'
                     sh 'node --version'
                     //docker.build('examen-larose') // Nom de l'image Docker à construire
                 }
