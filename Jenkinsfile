@@ -23,7 +23,7 @@ pipeline{
             steps{
                 script{
                     //sh 'docker build -t laroseikitama/examen-larose .'
-                    sh 'docker --version'
+                    sh 'node --version'
                     //docker.build('examen-larose') // Nom de l'image Docker à construire
                 }
             }
