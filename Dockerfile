@@ -5,6 +5,6 @@ EXPOSE 8085
 WORKDIR /app
 
 # Copiez le fichier JAR de votre projet dans le conteneur
-COPY target/nom-du-fichier.jar /app/app.jar
+COPY target/examen-larose.jar /app/examen-larose.jar
 
 ENTRYPOINT ["java","-jar","/examen-larose.jar"]
