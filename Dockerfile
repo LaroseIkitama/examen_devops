@@ -7,4 +7,4 @@ WORKDIR /app
 # Copiez le fichier JAR de votre projet dans le conteneur
 COPY target/examen-larose.jar /app/examen-larose.jar
 
-ENTRYPOINT ["java","-jar","/examen-larose.jar"]
+ENTRYPOINT ["java","-jar","examen-larose.jar"]

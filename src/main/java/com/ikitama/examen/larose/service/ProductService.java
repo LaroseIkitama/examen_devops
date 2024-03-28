@@ -8,6 +8,7 @@ import com.ikitama.examen.larose.repository.ProductRepository;
 import lombok.AllArgsConstructor;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,7 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @Service
 public class ProductService {
+    @Autowired
     ProductRepository productRepository;
     ProductMapper productMapper;
     MessageSource messageSource;

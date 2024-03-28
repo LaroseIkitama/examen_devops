@@ -3,7 +3,7 @@ package com.ikitama.examen.larose;
 import com.ikitama.examen.larose.controller.ProductController;
 import com.ikitama.examen.larose.domain.Product;
 import com.ikitama.examen.larose.service.ProductService;
-import org.junit.jupiter.api.BeforeEach;
+
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -25,9 +25,10 @@ public class ProductControllerTest {
     @InjectMocks
     private ProductController productController;
 
-    @BeforeEach
-    public void setup() {
-        MockitoAnnotations.initMocks(this);
+
+
+    public ProductControllerTest(){
+        MockitoAnnotations.openMocks(this);
     }
 
     @Test
