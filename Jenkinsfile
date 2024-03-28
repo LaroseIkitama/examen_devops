@@ -30,7 +30,7 @@ pipeline{
                 script{
                     def dockerTag = "v2"
                     try{
-                        docker.build("laroseikitama/examen-larose2:${dockerTag}")  // Nom de l'image Docker à construire
+                        docker.build("laroseikitama/examen-larose:${dockerTag}")  // Nom de l'image Docker à construire
                     }catch (Exception e) {
                         echo "Une erreur s'est produite lors de la construction de l'image Docker : ${e.getMessage()}"
                         currentBuild.result = 'FAILURE'
