@@ -23,9 +23,9 @@ pipeline{
             steps{
                 script{
                     def dockerTag = "v2"
-                    sh 'docker build -t laroseikitama/examen-larose:${dockerTag} .'
+                    //sh 'docker build -t laroseikitama/examen-larose:${dockerTag} .'
                     //sh 'node --version'
-                    //docker.build('examen-larose') // Nom de l'image Docker à construire
+                     docker.build("laroseikitama/examen-larose:${dockerTag}")  // Nom de l'image Docker à construire
                 }
             }
         }
