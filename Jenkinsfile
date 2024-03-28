@@ -8,7 +8,7 @@ pipeline{
             steps{
                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/LaroseIkitama/examen_devops']])
                 //sh 'mvn clean'
-                sh 'mvn clean package'
+                //sh 'mvn clean package'
             }
         }
         stage('Build Test') {
