@@ -7,7 +7,7 @@ pipeline{
         stage('Build maven 3.9.6'){
             steps{
                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/LaroseIkitama/examen_devops']])
-                sh 'mvn clean install'
+                sh 'mvn install'
             }
         }
         stage('Build Test') {
